@@ -3,13 +3,6 @@
 # (See: 01-basic.rb, 02-pretty.rb, 03-expert.rb, 04-dsl.rb)
 
 
-gsub_file "Gemfile",
-    %r{gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'},
-    "gem 'elasticsearch-model', path: File.expand_path('../../../../../../elasticsearch-model', __FILE__)"
-
-# ----- Run bundle install ------------------------------------------------------------------------
-
-run "bundle install"
 
 # ----- Recreate the index ------------------------------------------------------------------------
 
